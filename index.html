@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      .bg-video {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .bg-video__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center center;
+        pointer-events: none;
+        will-change: transform, opacity;
+        transform: translate(-50%, -50%) translateZ(0);
+        -webkit-transform: translate(-50%, -50%) translateZ(0);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .bg-video__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .bg-video__video {
+        display: block;
+      }
+
+      .bg-video__image {
+        display: none;
+      }
+
+      @media (max-width: 767px) {
+        .bg-video__video {
+          display: none;
+        }
+
+        .bg-video__image {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-video" aria-hidden="true">
+      <video
+        class="bg-video__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      >
+        <source src="/src/assets/static/ying.mp4" type="video/mp4" />
+      </video>
+      <img class="bg-video__image" src="/src/assets/static/2.png" alt="" />
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+// 重置样式
+// * {
+//   box-sizing: border-box;
+// }
+
+html {
+  height: 100%;
+  font-size: 14px;
+}
+body {
+  height: 100%;
+  color: #333;
+  // min-width: 1240px;
+  font: 1em/1.4 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI',
+    'Hiragino Sans GB', 'STHeiti', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei',
+    sans-serif;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p,
+dl,
+dd {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+i {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+
+.el-form, .el-main, .el-header, .el-footer, 
+.el-scrollbar , .el-scrollbar__view,
+.el-menu,.el-tabs,.tabs-menu,.el-table,.el-table__body-wrapper,
+.el-table__body,.el-table__row,.el-table__cell,.el-input,
+.el-input__inner,.el-card,.el-card__body.el-tabs__nav,
+.el-input__wrapper,.el-upload-dragger,.el-collapse-item__header,.el-collapse-item__wrap,.el-upload-list__item,
+.el-select__wrapper,.el-upload-list,.el-form-item__content,.upload-preview,.el-upload{
+  background: transparent !important;
+}
+.btn-next{
+  .el-icon{
+    color: #FFF !important;
+  }
+  color: #FFF !important;
+  background: transparent !important;
+  border: 2px solid #FFF !important;
+  border-radius: 50% !important;
+}
+.btn-prev{
+  .el-icon{
+    color: #FFF !important;
+  }
+  color: #FFF !important;
+  background: transparent !important;
+  border: 2px solid #FFF !important;
+  border-radius: 50% !important;
+}
+.number{
+   color: #FFF !important;
+  background: transparent !important  ;
+  border: 2px solid #FFF !important;
+  border-radius: 50% !important;
+}
+.btn-quicknext{
+  color: #FFF !important;
+  background: transparent !important;
+  border: 2px solid #FFF !important;
+  border-radius: 50% !important;
+}
+.btn-quickprev{
+  color: #FFF !important;
+  background: transparent !important;
+  border: 2px solid #FFF !important;
+  border-radius: 50% !important;
+}
+.el-input__inner{
+  color: #FFF ;
+}
+:deep(.el-input__inner)::placeholder {
+      color: #fff;
+      opacity: 1;
+    }
+.el-select{
+   border-radius: 4px !important;
+   border: 1px solid white !important;
+}
+.el-input__wrapper{
+  border-radius: 4px !important;
+  border: 1px solid white !important;
+}
+.el-select__wrapper{
+  border-radius: 4px !important;
+}
+.el-select__selected-item{
+  color: #FFF !important;
+}
+.el-select__caret{
+  color: #FFF !important;
+}
+.el-input__icon{
+  color: #FFF !important;
+}
+.el-checkbox__label{
+  color: #FFF !important;
+}
+.el-input__prefix-inner{
+  color: #FFF !important;
+}
+.el-button{
+  border-radius: 4px !important;
+  background: transparent !important;
+  border: 1px solid white !important;
+  color: #FFF !important;
+}
+#app {
+  // background: #f5f5f5;
+  user-select: none;
+  height: 100%;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  // margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+html {
+  overflow-y: hidden;
+}
+.btn-next:hover,
+.btn-prev:hover,
+.btn-quicknext:hover,
+.btn-quickprev:hover,
+.number:hover,
+.number.is-active {
+  transform: translateY(-1px) scale(1.04); 
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.12)
+    ) !important;
+
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.45), 
+    0 0 0 1px rgba(255, 255, 255, 0.35),  
+    0 8px 18px rgba(0, 0, 0, 0.6),       
+    inset 0 0 8px rgba(0, 0, 0, 0.35),   
+    inset 0 0 20px rgba(255, 255, 255, 0.35); 
+}
+
+  /* 统一后台弹窗样式（Dialog 与 MessageBox） */
+  /* 对话框整体 */
+  .el-dialog__wrapper .el-dialog,
+  .el-dialog {
+    background-color: rgba(44, 100, 146) !important;
+    color: #fff !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6) !important;
+  }
+  .el-dialog__header,
+  .el-dialog__body,
+  .el-dialog__footer {
+    background: transparent !important;
+    color: #fff !important;
+  }
+  .el-dialog__title {
+    color: #fff !important;
+  }
+  .el-dialog__footer .el-button {
+    border-color: rgba(255,255,255,0.12) !important;
+    color: #fff !important;
+  }
+
+  /* MessageBox（确定/取消弹窗） */
+  .el-message-box__wrapper .el-message-box,
+  .el-message-box {
+    background-color: rgba(44, 100, 146) !important;
+    color: #fff !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6) !important;
+  }
+  .el-message-box__title {
+    color: #fff !important;
+  }
+  .el-message-box__message {
+    color: rgba(255,255,255,0.92) !important;
+  }
+  .el-message-box__btns .el-button {
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    color: #fff !important;
+  }
+  .el-message-box__btns .el-button--danger {
+    border-color: rgba(255,80,80,0.9) !important;
+    color: #fff !important;
+    background: rgba(255,80,80,0.12) !important;
+  }
+
+  /* 让 confirm 弹窗的遮罩更暗以突出弹窗 */
+  .v-modal {
+    background: rgba(0,0,0,0.55) !important;
+  }
+
+  /* 统一表单内控件颜色以配合暗背景 */
+  .el-dialog .el-input__inner,
+  .el-message-box .el-input__inner {
+    color: #fff !important;
+  }
+  .el-form-item__label {
+    color: #fff !important;
+  }
