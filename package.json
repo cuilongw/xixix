@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "mock": "node server/mock-api.mjs",
+    "dev:demo": "node server/dev-all.mjs"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",

@@ -152,14 +152,14 @@ const querySearchAsync = async (queryString, callback) => {
 const handleSearchInput = (value) => {
   emit("searchChange", value);
 };
-// const handleSearchSelect = (item) => {
-//   selectedTags.value = item.value; // 更新搜索框的值
-//   emit("searchChange", item.value); // 将选中的值传递给父组件
-// };
-// const handleClear = () => {
-//   selectedTags.value = ""; // 清空搜索框的值
-//   emit("searchChange", ""); // 将清空的值传递给父组件
-// };
+const handleSearchSelect = (item) => {
+  selectedTags.value = item.value; // 更新搜索框的值
+  emit("searchChange", item.value); // 将选中的值传递给父组件
+};
+const handleClear = () => {
+  selectedTags.value = ""; // 清空搜索框的值
+  emit("searchChange", ""); // 将清空的值传递给父组件
+};
 // 选中的分辨率
 const selectedResolution = ref("");
 // 当前选择的分类

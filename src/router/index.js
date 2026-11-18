@@ -86,7 +86,6 @@ const router = createRouter({
           ]
         },
         { path: 'components/profile', component: MyProfile },
-        { path: 'components/history', component: MyHistory },
         {
           path: 'components/history',
           component: MyHistory,

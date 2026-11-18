@@ -36,8 +36,21 @@ git clone https://github.com/asd-asa/xixixix.git
 # 安装依赖
 npm install
 
-# 启动开发服务器
+# 启动开发服务器（需要后端已运行在 http://localhost:8000）
 npm run dev
+
+# 没有后端时：一条命令同时启动「模拟后端 + 前端」
+npm run dev:demo
+```
+
+> `npm run dev:demo` 会启动 `server/mock-api.mjs`（占位后端，端口 8000，纯内存数据 + 项目内的示例图片）
+> 和 Vite（端口 5000），用于没有 Django 后端时的本地预览。
+> 演示账号：`admin` / 任意密码（管理员），`test01` / 任意密码（普通用户）。
+> 只用 `npm run mock` 可以单独启动模拟后端；接入真实后端时无需启动它。
+
+### 前端接口地址
+`src/utils/request.js` 中的 `baseURL` 默认指向 `http://localhost:8000/`，与 Django 后端一致，
+所以前后端联调时只需把后端跑起来，前端无需改动。
 
 🧩 项目结构
 wallpaper-gallery/
