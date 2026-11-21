@@ -31,3 +31,6 @@ coverage
 
 # 本地编辑器安装包
 *.vsix
+
+# 未使用的大体积视频（保留在本地）
+src/assets/static/yinghua.mp4
