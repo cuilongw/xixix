@@ -31,7 +31,7 @@
 ### 安装步骤
 ```bash
 # 克隆仓库
-git clone https://github.com/asd-asa/xixixix.git
+git clone https://github.com/cuilongw/xixix.git
 
 # 安装依赖
 npm install
